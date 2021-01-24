@@ -1,0 +1,31 @@
+{
+  "name": "profile-generator",
+  "version": "1.0.0",
+  "description": "This application generates team profiles from the command line.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sloanlacey/profile-generator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sloanlacey/profile-generator/issues"
+  },
+  "homepage": "https://github.com/sloanlacey/profile-generator#readme",
+  "dependencies": {
+    "inquirer": "^7.3.3",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}
