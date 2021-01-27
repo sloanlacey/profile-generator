@@ -73,7 +73,7 @@ function addEmployee() {
             if (addNewEmp === 'yes') {
                 addEmployee();
             } else {
-                // call function to stop rendering html? It would need to contain the closing tags
+                endHtml();
             }
         });
     });
@@ -157,7 +157,7 @@ function newEmpCards(newMember) {
                     <li>Office Number: ${schoolName}</li>
                 </ul>
             </div>
-        </div>`
+        </div>`;
         }
         console.log('Generating new employee');
         fs.appendFile('./dist/new-team.html', card, function (error) {
@@ -167,6 +167,21 @@ function newEmpCards(newMember) {
                 return resolve();
         });
     });
+}
+
+function endHtml() {
+    const html = `</div>
+    </div>
+    
+    </body>
+    </html>`;
+
+    fs.appendFile('./dist/new-team.html', html, function (error) {
+        if (error) {
+            console.log(error);
+        };
+    });
+    console.log('Finished!');
 }
 
 
