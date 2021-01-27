@@ -67,13 +67,13 @@ function addEmployee() {
             } else {
                 newEmp = new Intern(name, id, email, selection);
             }
-            employees.push(newEmp)
-            // add html funtion here?
+            employees.push(newEmp);
+            newEmpCards(newEmp)
         .then(function() {
             if (addNewEmp === 'yes') {
                 addEmployee();
             } else {
-                // call function to stop rendering html?
+                // call function to stop rendering html? It would need to contain the closing tags
             }
         });
     });
@@ -109,6 +109,64 @@ fs.writeFile('./dist/new-team.html', html, function (error) {
     }
 })
 console.log('start');
+}
+// Function to generate the html for new employee cards
+// Connect with if statements for role selection
+function newEmpCards(newMember) {
+    return new Promise(function(resolve, reject) {
+        const empName = newMember.getName();
+        const empId = newMember.getId();
+        const empEmail = newMember.getEmail();
+        const role = newMember.getRole();
+        let card = '';
+        if (role === 'Manager') {
+            const officeNum = newMember.getOfficeNumber();
+            card = `<div class="col s12 m5">
+            <div class="card-panel teal">
+                <h3>${empName}</h3>
+                <h5>Role will go here--consider an icon</h5>
+                <ul>
+                    <li>ID: ${empId}</li>
+                    <li>Email: ${empEmail}</li>
+                    <li>Office Number: ${officeNum}</li>
+                </ul>
+            </div>
+        </div>`;
+        } else if (role === 'Engineer') {
+            const gitHub = newMember.getGithub();
+            card = `<div class="col s12 m5">
+            <div class="card-panel teal">
+                <h3>${empName}</h3>
+                <h5>Role will go here--consider an icon</h5>
+                <ul>
+                    <li>ID: ${empId}</li>
+                    <li>Email: ${empEmail}</li>
+                    <li>Office Number: ${gitHub}</li>
+                </ul>
+            </div>
+        </div>`;
+        } else {
+            const schoolName = newMember.getSchool();
+            card = `<div class="col s12 m5">
+            <div class="card-panel teal">
+                <h3>${empName}</h3>
+                <h5>Role will go here--consider an icon</h5>
+                <ul>
+                    <li>ID: ${empId}</li>
+                    <li>Email: ${empEmail}</li>
+                    <li>Office Number: ${schoolName}</li>
+                </ul>
+            </div>
+        </div>`
+        }
+        console.log('Generating new employee');
+        fs.appendFile('./dist/new-team.html', card, function (error) {
+            if (error) {
+                return reject(error);
+            };
+                return resolve();
+        });
+    });
 }
 
 
