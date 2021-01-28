@@ -1,19 +1,20 @@
+// Modules
 const Employee = require('./lib/Employee');
 const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
-
+// Dependencies
 const inquirer = require('inquirer');
 const fs = require('fs');
-// const path = require('path');
 
+// Empty employee array will be populated with employee cards
 const employees = [];
-
+// Function init starts the application and calls the initial generation of html and starts the addEmployee function
 function initGenerator() {
     generateHtml();
     addEmployee();
 }
-
+// addEmployee prompts the user to identify 3 parameters and then choose a role, it then generates the mothod unique to that role as a question for user input--based on user selection, the generator creates a new instance of the employee type and pushes the card into the empty array--when all selections are made, the array cards are appended to the html file and the ending html tags are appended as well, completing the application
 function addEmployee() {
     inquirer.prompt([{
         message: 'What is your name? Please include your first and last name in the response.',
@@ -168,7 +169,7 @@ function newEmpCards(newMember) {
         });
     });
 }
-
+// Function adds closing html tags and appends them to the generated html file new-team.html
 function endHtml() {
     const html = `</div>
     </div>
@@ -184,9 +185,5 @@ function endHtml() {
     console.log('Finished!');
 }
 
-
-// .then make a function to handle the name, id, email and role selection
-// start with if statements and then make switch cases
-// if role === blank then do this, else if blank do this, else do blank and pass through the unique selectors for the employee types
-// 
+// Invoke init function
 initGenerator();
