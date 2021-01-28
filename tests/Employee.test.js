@@ -26,7 +26,7 @@ describe('Employee', () => {
 
     it('should throw an error if the parameter of email is not a string', () => {
         const callBack = () => new Employee ('Buddy', 9, 17);
-        const error = new Error ('Expected the parameter of name to be entered as a string');
+        const error = new Error ('Expected the parameter of email to be entered as a string');
 
         expect(callBack).toThrowError(error);
 
