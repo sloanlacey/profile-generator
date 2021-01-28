@@ -122,10 +122,10 @@ function newEmpCards(newMember) {
         let card = '';
         if (role === 'Manager') {
             const officeNum = newMember.getOfficeNumber();
-            card = `<div class="col s12 m12 l4">
-            <div class="card-panel" style="background-color: #000000; color: #f5f5f5;">
-                <h3>${empName}</h3>
-                <h5>Role: ${role}</h5>
+            card = `<div class="col s12 m12 l3">
+            <div class="card-panel" style="background-color: #428C85; color: #f5f5f5;">
+                <h5>${empName}</h5>
+                <h6>Role: ${role}</h6>
                 <ul>
                     <li>ID: ${empId}</li>
                     <li>Email: ${empEmail}</li>
@@ -135,10 +135,10 @@ function newEmpCards(newMember) {
         </div>`;
         } else if (role === 'Engineer') {
             const gitHub = newMember.getGithub();
-            card = `<div class="col s12 m12 l4">
-            <div class="card-panel" style="background-color: #000000; color: #f5f5f5;">
-                <h3>${empName}</h3>
-                <h5>Role: ${role}</h5>
+            card = `<div class="col s12 m12 l3">
+            <div class="card-panel" style="background-color: #428C85; color: #f5f5f5;">
+                <h5>${empName}</h5>
+                <h6>Role: ${role}</h6>
                 <ul>
                     <li>ID: ${empId}</li>
                     <li>Email: ${empEmail}</li>
@@ -148,10 +148,10 @@ function newEmpCards(newMember) {
         </div>`;
         } else {
             const schoolName = newMember.getSchool();
-            card = `<div class="col s12 m12 l4">
-            <div class="card-panel" style="background-color: #000000; color: #f5f5f5;">
-                <h3>${empName}</h3>
-                <h5>Role: ${role}</h5>
+            card = `<div class="col s12 m12 l3">
+            <div class="card-panel" style="background-color: #428C85; color: #f5f5f5;">
+                <h5>${empName}</h5>
+                <h6>Role: ${role}</h6>
                 <ul>
                     <li>ID: ${empId}</li>
                     <li>Email: ${empEmail}</li>
