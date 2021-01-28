@@ -121,7 +121,7 @@ function newEmpCards(newMember) {
         let card = '';
         if (role === 'Manager') {
             const officeNum = newMember.getOfficeNumber();
-            card = `<div class="col s12 m5">
+            card = `<div class="col s12 m12 l4">
             <div class="card-panel" style="background-color: #000000; color: #f5f5f5;">
                 <h3>${empName}</h3>
                 <h5>Role: ${role}</h5>
@@ -134,27 +134,27 @@ function newEmpCards(newMember) {
         </div>`;
         } else if (role === 'Engineer') {
             const gitHub = newMember.getGithub();
-            card = `<div class="col s12 m5">
+            card = `<div class="col s12 m12 l4">
             <div class="card-panel" style="background-color: #000000; color: #f5f5f5;">
                 <h3>${empName}</h3>
                 <h5>Role: ${role}</h5>
                 <ul>
                     <li>ID: ${empId}</li>
                     <li>Email: ${empEmail}</li>
-                    <li>Office Number: ${gitHub}</li>
+                    <li>Github Username: ${gitHub}</li>
                 </ul>
             </div>
         </div>`;
         } else {
             const schoolName = newMember.getSchool();
-            card = `<div class="col s12 m5">
+            card = `<div class="col s12 m12 l4">
             <div class="card-panel" style="background-color: #000000; color: #f5f5f5;">
                 <h3>${empName}</h3>
                 <h5>Role: ${role}</h5>
                 <ul>
                     <li>ID: ${empId}</li>
                     <li>Email: ${empEmail}</li>
-                    <li>Office Number: ${schoolName}</li>
+                    <li>School: ${schoolName}</li>
                 </ul>
             </div>
         </div>`;
