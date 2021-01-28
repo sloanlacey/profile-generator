@@ -21,7 +21,7 @@ function addEmployee() {
         name: 'name',
     }, {
         message: 'What is your employee ID number?',
-        type: 'input',
+        type: 'number',
         name: 'id',
     }, {
         message: 'What is your email address?',
