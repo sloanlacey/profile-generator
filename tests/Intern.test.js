@@ -3,7 +3,7 @@ const Intern = require('../lib/Intern');
 
 describe('Intern', () => {
     describe('Initialization', () => {
-        it('should create an extension of the employee class called intern with the properties of name, employee id, and school name');
+        it('should create an extension of the employee class called intern with the properties of name, employee id, and school name', () => {
         const intern = new Intern ('Callisto', 35, 'moonchild@jupiter.com', 'PSU');
 
         expect(intern.name).toEqual('Callisto');
@@ -73,7 +73,7 @@ describe('getSchool', () => {
     it('should return the parameter for school that was defined by the Intern class', () => {
         const intern = new Intern ('Callisto', 35, 'moonchild@jupiter.com', 'PSU');
 
-        expect(intern.getRole()).toBe('PSU');
+        expect(intern.getSchool()).toBe('PSU');
     })
 })
 
@@ -83,4 +83,6 @@ describe('getRole', () => {
 
         expect(intern.getRole()).toBe('Intern');
     })
+})
+
 })

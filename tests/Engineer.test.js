@@ -3,7 +3,7 @@ const Engineer = require('../lib/Engineer');
 
 describe('Engineer', () => {
     describe('Initialization', () => {
-        it('should create an extension of the employee class called engineer with the properties of name, employee id, and github username');
+        it('should create an extension of the employee class called engineer with the properties of name, employee id, and github username', () => {
         const engineer = new Engineer ('Teal', 32, 'mister@teal.com', 'tealrevolver');
 
         expect(engineer.name).toEqual('Teal');
@@ -72,7 +72,7 @@ describe('getGithub', () => {
     it('should return the parameter for github that was passed in through the Engineer class', () => {
         const engineer = new Engineer ('Teal', 32, 'mister@teal.com', 'tealrevolver');
 
-        expect(engineer.getEmail()).toBe('tealrevolver');
+        expect(engineer.getGithub()).toBe('tealrevolver');
     })
 })
 
@@ -82,4 +82,6 @@ describe('getRole', () => {
 
         expect(engineer.getRole()).toBe('Engineer');
     })
+})
+
 })

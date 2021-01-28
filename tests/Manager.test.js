@@ -4,7 +4,7 @@ const Manager = require('../lib/Manager');
 
 describe('Manager', () => {
     describe('Initialization', () => {
-        it('should create an extension of the employee class called manager with the properties of name, employee id, and office number');
+        it('should create an extension of the employee class called manager with the properties of name, employee id, and office number', () => {
         const manager = new Manager ('Phteven', 77, 'phteven@manager.com', 3);
 
         expect(manager.name).toEqual('Phteven');
@@ -73,7 +73,7 @@ describe('getOfficeNumber', () => {
     it('should return the parameter for officeNumber that was passed in through the Manager class', () => {
         const manager = new Manager ('Phteven', 77, 'phteven@manager.com', 3);
 
-        expect(manager.getId()).toBe(3);
+        expect(manager.getOfficeNumber()).toBe(3);
     })
 })
 
@@ -83,4 +83,6 @@ describe('getRole', () => {
 
         expect(manager.getRole()).toBe('Manager');
     })
+})
+
 })

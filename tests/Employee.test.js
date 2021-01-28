@@ -2,7 +2,7 @@ const Employee = require('../lib/Employee');
 
 describe('Employee', () => {
     describe('Initialization', () => {
-        it('should create an employee class with the properties of name, employee id, and email');
+        it('should create an employee class with the properties of name, employee id, and email', () => {
         const employee = new Employee('Buddy', 9, 'beef@beefyboy.com');
 
         expect(employee.name).toEqual('Buddy');
@@ -66,3 +66,4 @@ describe('getRole', () => {
     })
 })
 
+})
