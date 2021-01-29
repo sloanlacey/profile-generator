@@ -65,7 +65,7 @@ This project is created with:
 
 ## Tests
 
-![Pass]()
+![Pass](https://github.com/sloanlacey/profile-generator/blob/main/images/passtest.png)
 
 Click [here](https://drive.google.com/file/d/1FbyXQaiE1KBJdy5_D7HMsZTA12lDkbeY/view) to see a testing video.
 
