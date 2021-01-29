@@ -1,11 +1,10 @@
-const { expect } = require('@jest/globals');
-const Employee = require('../lib/Employee');
+// const Employee = require('../lib/Employee');
 const Manager = require('../lib/Manager');
 
 describe('Manager', () => {
     describe('Initialization', () => {
         it('should create an extension of the employee class called manager with the properties of name, employee id, and office number', () => {
-        const manager = new Manager ('Phteven', 77, 'phteven@manager.com', 'three');
+        const manager = new Manager ('Phteven', 77, 'phteven@manager.com', '3');
 
         expect(manager.name).toEqual('Phteven');
         expect(manager.id).toEqual(77);
@@ -21,7 +20,7 @@ describe('Manager', () => {
     })
 
     it('should throw an error if the parameter of id is not a number', () => {
-        const callBack = () => new Manager ('Phteven', 'hello', 'phteven@manager.com', 3);
+        const callBack = () => new Manager ('Phteven', 'hello', 'phteven@manager.com', '3');
         const error = new Error ('Expected the parameter of id to be a number');
 
         expect(callBack).toThrowError(error);
@@ -35,9 +34,9 @@ describe('Manager', () => {
 
     })
 
-    it('should throw an error if the parameter of officeNumber is not a number', () => {
-        const callBack = () => new Manager ('Phteven', 77, 'phteven@manager.com', 'office num');
-        const error = new Error ('Expected the parameter of officeNumber to be entered as a number');
+    it('should throw an error if the parameter of officeNumber is not a string', () => {
+        const callBack = () => new Manager ('Phteven', 77, 'phteven@manager.com', 3);
+        const error = new Error ('Expected the parameter of officeNumber to be entered as a string');
 
         expect(callBack).toThrowError(error);
 
