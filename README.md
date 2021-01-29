@@ -11,7 +11,9 @@ By initiating this application and entering prompted information, users can quic
 - [Example HTML](#example-html)
 - [Technologies](#technologies)
 - [Summary](#summary)
+- [Tests](#tests)
 - [Author](#author)
+- [Questions](#questions)
 
 ## General Info
 
@@ -60,6 +62,12 @@ This project is created with:
 ## Summary
 
 - This application can be utilized in a variety of settings, and the code can be altered slightly to fit the needs of individual users. Design parameters can be changed, along with question prompts. This application can be tailored to suit any company or team.
+
+## Tests
+
+![Pass]()
+
+Click [here](https://drive.google.com/file/d/1FbyXQaiE1KBJdy5_D7HMsZTA12lDkbeY/view) to see a testing video.
 
 ## Author
 
