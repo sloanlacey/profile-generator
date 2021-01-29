@@ -39,7 +39,7 @@ THEN I exit the application, and the HTML is generated
 
 ## Usage Instructions
 
-![Demo](https://github.com/sloanlacey/quality-readme-generator/blob/main/images/quality-readme-generator.gif)
+![Demo](https://github.com/sloanlacey/profile-generator/blob/main/images/demo.gif)
 
 Click [here](https://drive.google.com/file/d/12SUSHpkk_sJLdFmyO9dyrDw2WTr-P4E4/view) for a full video demonstration.
 
