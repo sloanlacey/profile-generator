@@ -8,6 +8,7 @@ By initiating this application and entering prompted information, users can quic
 
 - [General Info](#general-info)
 - [Usage Instructions](#usage-instructions)
+- [Example HTML](#example-html)
 - [Technologies](#technologies)
 - [Summary](#summary)
 - [Author](#author)
@@ -40,7 +41,11 @@ THEN I exit the application, and the HTML is generated
 
 ![Demo](https://github.com/sloanlacey/quality-readme-generator/blob/main/images/quality-readme-generator.gif)
 
-Click [here](https://drive.google.com/file/d/1pKnTTSrV4G0AGgbbP5uQZ_ipdCOMyYVF/view) for a full video demonstration.
+Click [here](https://drive.google.com/file/d/12SUSHpkk_sJLdFmyO9dyrDw2WTr-P4E4/view) for a full video demonstration.
+
+## Example HTML
+
+![Exapmle HTML]()
 
 ## Technologies
 
@@ -58,7 +63,7 @@ This project is created with:
 
 ## Author
 
-- [Sloan Lacey](https://github.com/sloanlacey/quality-readme-generator)
+- [Sloan Lacey](https://github.com/sloanlacey/profile-generator)
 
 ## Questions?
 
