@@ -45,7 +45,7 @@ Click [here](https://drive.google.com/file/d/12SUSHpkk_sJLdFmyO9dyrDw2WTr-P4E4/v
 
 ## Example HTML
 
-![Exapmle HTML]()
+![Exapmle HTML](https://github.com/sloanlacey/profile-generator/blob/main/images/example-page.png)
 
 ## Technologies
 
